@@ -1,4 +1,4 @@
-const CACHE_NAME = 'site-cache-v1'; // Nombre de la caché
+const CACHE_NAME = 'site-cache-v2'; // Nombre de la caché
 const CACHE_ASSETS = [
     './index.html',
     './AbtMe.html',
