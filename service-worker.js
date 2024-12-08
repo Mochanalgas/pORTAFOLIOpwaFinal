@@ -73,7 +73,7 @@ self.addEventListener('install', (event) => {
 // Activar el Service Worker
 self.addEventListener('activate', (event) => {
     event.waitUntil(
-        caches.keys().then((cacheNames) => {
+        caches.keys().then((CACHE_NAME) => {
             return Promise.all(
                 cacheNames.map((cache) => {
                     if (cache !== CACHE_NAME) {
