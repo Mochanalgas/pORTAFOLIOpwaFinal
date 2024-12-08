@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ff00cc, 0 0 15px #ff0051, 0 0 20px #a61255, 0 0 40px #e8e42c, 0 0 60px #964a65, 0 0 10px #0095ff, 0 0 98px #ff0000;
+        color: #ffffff;
+    }
+  }
+
+/* Estilo específico para el acordeón de la historia de la animación */
+.accordion .btn-link {
+    
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita para el texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.accordion .btn-link:hover {
+    
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    text-decoration-color: #fbff00;
+    text-decoration-thickness: 12px;
+}
+
+/* Estilo para el card del acordeón */
+.accordion .card {
+   
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado entre cards */
+    background-color: #25001d26; /* Color de fondo */
+}
+
+/* Estilo para el encabezado del card */
+.accordion .card-header {
+    background-color: #007bff00; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+/* Estilo para el cuerpo del card */
+.accordion .card-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el jumbotron dentro del acordeón */
+.accordion .jumbotron {
+    background-color: #2d002156; /* Color de fondo del jumbotron */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el botón dentro del jumbotron */
+.accordion .jumbotron .btn {
+    background-color: #007bff00; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.accordion .jumbotron .btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+  
+html, body {
+    height: 100%; /* Asegura que el body ocupe el 100% de la altura */
+    margin: 0; /* Elimina el margen predeterminado */
+    background-position: center;
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    overflow-x: hidden; /* Desactiva el scroll lateral */
+    background-color: #7B31A5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='353' height='42.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='14.3' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.jumbotron2{
+    color: #72ff4b;
+    background-color: #210a22ba;
+    margin: 18px;
+    border-radius: 12px;
+}
+
+.jumbotron{
+    color: #72ff4b;
+    background-color: #210a22ba;
+    margin: 18px;
+    border-radius: 12px;
+}
+
+.h1{
+    text-shadow: 0 0 5px #ff00cc, 0 0 15px #ff0051, 0 0 20px #a61255, 0 0 40px #4c00ff, 0 0 60px #964a65, 0 0 10px #0095ff, 0 0 98px #ff0000;
+    color: #e9c8de;
+  font-family: "Creepster", system-ui;
+  
+  animation: blink 5s infinite;
+  -webkit-animation: blink 5s infinite;
+}
+
+
+#loading-screen {  
+    color: #00ffc8b7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #a600c794;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Asegura que esté por encima del contenido */
+    
+}
+
+.spinner {
+    border: 25px solid #00000059; /* Color del fondo del spinner */
+    border-top: 25px solid #66ff00; /* Color de la parte superior del spinner */
+    border-radius: 50%;
+    width: 50px; /* Ancho del spinner */
+    height: 50px; /* Alto del spinner */
+    animation: spin 1s linear infinite; /* Animación de rotación */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.centered-button {
+    display: block; /* Cambia el botón a un bloque para que ocupe todo el ancho disponible */
+    margin: 0 auto; /* Aplica márgenes automáticos a los lados para centrarlo */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 10px 20px; /* Espaciado interno del botón (arriba/abajo, izquierda/derecha) */
+    background-color: #afafaf; /* Color de fondo del botón */
+    color: #fbff00; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 12px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.centered-button:hover {
+    background-color: #d21313; /* Color de fondo al pasar el mouse */
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+}
+
+/*Header*/
+
+.navbar {
+    background-color: #000000; /* Color de fondo del navbar */
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.navbar .navbar-brand {
+    color: #fe0000; /* Color del texto del brand */
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffcc00; /* Color del texto del brand al pasar el mouse */
+}
+
+.navbar .nav-link {
+    color: #a8a8a8; /* Color del texto de los enlaces */
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    text-align: center;
+    
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; /* Color del texto de los enlaces al pasar el mouse */
+}
+
+.navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Color del borde del botón de toggler */
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Icono del toggler en blanco */
+}
+
+.navbar .dropdown-menu {
+    background-color: #ff0000; /* Color de fondo del menú desplegable */
+}
+
+.navbar .dropdown-item {
+    color: #ffffff; /* Color de los enlaces del menú desplegable */
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #d44848; /* Color de fondo del enlace al pasar el mouse */
+}
+
+audio {
+    max-width: 100%; /* Espaciado alrededor del reproductor */
+    
+}
+.navbar-button{
+    width: 25%;
+    height: 10%;
+    border-radius: 12px;
+    background-color: #a1a1a1;
+    color: #eb0000;
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+}
+.audio-container {
+    margin: 20px; /* Espaciado alrededor del reproductor */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente el reproductor */
+    width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #000000; /* Color de fondo para pantallas pequeñas */
+    }
+    body {
+        overflow-x: hidden; /* Desactiva el scroll lateral */
+    }
+    
+    /* Asegúrate de que las imágenes y otros elementos no desborden */
+    img {
+        width: 100%; /* Ajusta las imágenes al contenedor */
+        height: 100px; /* Mantiene la proporción */
+    }
+}
+
+.col-md-4 {
+    color: #54ff52;
+    background-color: #3700008f; /* Color de fondo */
+    padding: 15px; /* Espacio interior */
+    border: 5px #eb0000; /* Borde */
+    border-radius: 10px; /* Esquinas redondas */
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    text-align: center;
+    margin: 5px;
+    
+}
+
+
+
+.carousel-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 400px; /* Altura máxima estándar para las imágenes */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar la imagen */
+    border: 15px solid #ffffff; /* Borde negro alrededor de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
+    margin: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(152, 184, 12, 0.5); /* Color de fondo de las flechas */
+    border-radius: 50%; /* Esquinas redondeadas para las flechas */
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgb(166, 69, 69); /* Color de fondo al pasar el mouse */
+}
+
+
+
+/*Pie de pagina */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: justify;
+    padding: 10px 0;
+    background-color: #ff000068;
+    color: #6dff74;
+    font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
+    margin: 15px;
+    border-radius: 12px;
+
+}
+
+.custom-button {
+    display: inline-block; /* Asegura que el botón se comporte como un bloque */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #ff0000; /* Color de fondo */
+    color: rgb(221, 255, 0); /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 12px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Roboto', sans-serif; /* Fuente consistente con el resto del sitio */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Estilos específicos para la página de CV */
+
+
+
+
+
+/* Card Styles */
+.card {
+    color: #00fe15;
+    background-color: rgba(79, 0, 48, 0.596);
+    border: none ; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espaciado inferior entre tarjetas */
+}
+
+.card-header {
+    font-family: "Creepster", system-ui;
+    background-color: #660000c2; /* Color de fondo del encabezado */
+    color: rgb(0, 255, 34); /* Color del texto del encabezado */
+    font-weight: bold; /* Negrita para el encabezado */
+    padding: 10px; /* Espaciado interno */
+}
+
+.card-body {
+    padding: 20px; /* Espaciado interno del cuerpo de la tarjeta */
+}
+
+
