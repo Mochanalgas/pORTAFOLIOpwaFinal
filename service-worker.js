@@ -76,7 +76,7 @@ self.addEventListener('activate', (event) => {
         caches.keys().then((CACHE_NAME) => {
             return Promise.all(
                 cacheNames.map((cache) => {
-                    if (cache !== CACHE_NAME) {
+                    if (cache !== cacheNames) {
                         console.log('Borrando caché antigua: ', cache);
                         return caches.delete(cache);
                     }
