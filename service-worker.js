@@ -28,7 +28,6 @@ const CACHE_ASSETS = [
     './IMG/concept_5.jpg',
     './IMG/frenzy.jpg',
     './IMG/MONSTRUOS.jpg',
-    './IMG/Bebe.gif',
     './IMG/R1.png',
     './IMG/payaso.png',
     './IMG/payaso-IDLE.png',
